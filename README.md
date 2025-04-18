@@ -42,7 +42,7 @@ Los roles se asignan automáticamente en la tabla `perfiles` y se usan para most
 ### En login:
 
 - Incluye link para **recuperar contraseña** vía Supabase
-- No se requiere confirmación de email para ingresar (email confirmation disabled)
+- No se requiere confirmación de email para ingresar actualmente (email confirmation disabled)
 
 ---
 
@@ -101,7 +101,7 @@ vercel --prod
 
 ## ⏱ Cron jobs sugeridos
 
-Puedes usar [Supabase Edge Tasks](https://supabase.com/docs/guides/functions/schedule-functions) o Vercel Scheduler:
+Usamos  [Supabase Edge Tasks](https://supabase.com/docs/guides/functions/schedule-functions) o Vercel Scheduler:
 
 ### Airtable Sync (cada 15 min):
 
@@ -124,5 +124,3 @@ curl -X POST https://apptrefa.functions.supabase.co/syncGoogleSheetsToAutos
 - Merge automático en Supabase vía `Prefer: resolution=merge-duplicates`
 
 ---
-
-## 📌 Contacto o soport
